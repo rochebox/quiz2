@@ -1,0 +1,17 @@
+
+<div class="boy-band-box col-xs-10 col-xs-offset-1">
+	<h2 class="text-center">Enter Your Band Info Here</h2>
+	  <%= simple_form_for @band do |f| %>
+	  <div class="input-labels">
+    	<%= f.input :name, input_html: { class: "input-text" } %>
+    	<%= f.input :members, input_html: { class: "input-text" } %>
+        <br />
+        <span class="glyphicon glyphicon-music"></span>
+    	<%= f.input :song1, input_html: { class: "input-text" } %>
+    	<div class="col-xs-offset-1"><%= f.input :song2, input_html: { class: "input-text" } %></div>
+    	<div class="col-xs-offset-2"><%= f.input :song3, input_html: { class: "input-text" } %></div>
+        <br />
+    	<div class="text-center"><%= f.submit 'List your band!', class: 'btn btn-primary btn-large' %></div>
+    </div>
+  	<% end %>
+</div>

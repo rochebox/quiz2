@@ -43,6 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top:10px; 
   margin-bottom:15px;
   padding:20px;
+  /* opacity: 0.5; */
+   background-color: rgba(255,255,255,0.65);
+}
+.btn{
+	font-size: 18pt;
+	background-color: #1f1f7a;
 }
 
 .box-song1 {
@@ -107,6 +113,20 @@ h3{
 .big-size{
 	font-size: 60px;
 	padding-bottom: 10px;
+}
+
+.input-labels{
+	font-family: 'Amatica SC', cursive;
+	font-size: 18pt;
+	/* padding-left: 50px; */
+
+}
+
+.input-text {
+    font-size: 14pt;
+	/* Modern Georgia-based serif stack */
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+   /*  margin-left: 30px; */
 }
 
 .animate-it{
