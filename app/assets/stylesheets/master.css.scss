@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Amatica+SC);
+@import url(https://fonts.googleapis.com/css?family=Fascinate);
+@import url(https://fonts.googleapis.com/css?family=Knewave);
 
 body{
 	background: url('/assets/polka.jpg');
@@ -8,10 +11,18 @@ font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, 
 
 }
 
+.container-fluid{
+	height: 75px;
+}
 .navbar.navbar-inverse {
   background-color: #1f1f7a;
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a; 
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: 'Amatica SC', cursive;
+    font-size: 48px;
 }
 
 
@@ -21,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .boy-band-box {
+  background: url('/assets/gold.jpg');
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -43,4 +55,72 @@ h1, h2, h3, h4, h5, h6 {
 
 .box-song3 {
 	.padding-left: 6cm !important;
+}
+
+.band-member {
+	font-family: 'Amatica SC', cursive;
+	font-size: 16pt;
+}
+
+/* rotating header */
+
+h1{
+	font-family: 'gooddogregular', sans-serif;
+	font-size: 130px;
+	color: #6600cc;
+	text-shadow: 3px 3px 3px #cc0000;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.black-heart{
+	color:  #141452;
+	font-size: 100px;
+}
+
+h1:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+h2 {
+	font-family: 'gooddogregular', sans-serif;
+	font-size: 75px;
+	color: #6600cc;
+	text-shadow: 3px 3px 3px #cc0000;
+}
+
+h3{
+	font-family: 'Amatica SC', cursive;
+	color: #084078;
+	font-size: 70px;
+	text-shadow: 2px 2px 2px #b3b3d7;
+}
+
+.header-button-div{
+	padding-top: 10px;
+	font-family: 'Amatica SC', cursive;
+	text-shadow: 2px 2px 2px #b3b3d7;
+}
+
+.big-size{
+	font-size: 60px;
+	padding-bottom: 10px;
+}
+
+.animate-it{
+	animation: fadeAndScale 2.5s ease-in;
+	
+}
+
+@keyframes fadeAndScale {
+	from {
+		opacity: 0;
+		transform: scale3d(3.0, 3.0, 1);
+	}
+	to{
+ 		opacity: 1;
+ 		transform: scale3d(1, 1, 1);
+	}
 }

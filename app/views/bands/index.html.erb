@@ -1,10 +1,10 @@
-<h1 class=text-center>I <span class="glyphicon glyphicon-heart"></span> 80's Bands</h1>
+<h1 class=text-center>I <span class="glyphicon glyphicon-heart black-heart"></span> 80's Bands</h1>
 <br />
 <% @bands.each do |band| %>
 
 	<div class="boy-band-box col-xs-10 col-xs-offset-1">
-		<h1><%= band.name %></h1>
-		<p><span class="glyphicon glyphicon-star"></span><i><%= band.members %></i></p>
+		<h2><%= band.name %></h2>
+		<p><span class="glyphicon glyphicon-star"></span> <span class="band-member">Band Members:</span> <i><%= band.members %></i></p>
 		<br />
 	
 		<p><span class="glyphicon glyphicon-music"></span>
