@@ -1,1 +1,14 @@
 <h1>We love 80's Bands</h1>
+<br />
+<% @bands.each do |band| %>
+
+	<div>
+		<h1><%= band.name %></h1>
+		<i><%= band.members %></i>
+		<br />
+		<p><%= band.song1 %></p>
+		<p><%= band.song2 %></p>
+		<p><%= band.song3 %></p>
+	</div>
+	<hr />
+	<% end %>
