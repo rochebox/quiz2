@@ -1,14 +1,21 @@
-<h1>We love 80's Bands</h1>
+<h1>I <span class="glyphicon glyphicon-heart"></span> 80's Bands</h1>
 <br />
 <% @bands.each do |band| %>
 
 	<div>
 		<h1><%= band.name %></h1>
-		<i><%= band.members %></i>
+		<p><span class="glyphicon glyphicon-star"></span><i><%= band.members %></i></p>
 		<br />
-		<p><%= band.song1 %></p>
-		<p><%= band.song2 %></p>
-		<p><%= band.song3 %></p>
+	
+		<p><span class="glyphicon glyphicon-music"></span>
+			<%= band.song1 %>
+		</p>
+		<p><span class="glyphicon glyphicon-music"></span>
+			<%= band.song2 %>
+		</p>
+		<p><span class="glyphicon glyphicon-music"></span>
+			<%= band.song3 %>
+		</p>
 	</div>
 	<hr />
 	<% end %>
