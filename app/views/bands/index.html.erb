@@ -1,8 +1,8 @@
-<h1>I <span class="glyphicon glyphicon-heart"></span> 80's Bands</h1>
+<h1 class=text-center>I <span class="glyphicon glyphicon-heart"></span> 80's Bands</h1>
 <br />
 <% @bands.each do |band| %>
 
-	<div>
+	<div class="boy-band-box col-xs-10 col-xs-offset-1">
 		<h1><%= band.name %></h1>
 		<p><span class="glyphicon glyphicon-star"></span><i><%= band.members %></i></p>
 		<br />
@@ -10,12 +10,12 @@
 		<p><span class="glyphicon glyphicon-music"></span>
 			<%= band.song1 %>
 		</p>
-		<p><span class="glyphicon glyphicon-music"></span>
+		<p class="col-xs-offset-1"><span class="glyphicon glyphicon-music"></span>
 			<%= band.song2 %>
 		</p>
-		<p><span class="glyphicon glyphicon-music"></span>
+		<p class="col-xs-offset-2"><span class="glyphicon glyphicon-music"></span>
 			<%= band.song3 %>
 		</p>
 	</div>
-	<hr />
+	<!-- hr / -->
 	<% end %>

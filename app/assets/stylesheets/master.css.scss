@@ -1,2 +1,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+.boy-band-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-radius: 30px 90px;  /* its the 80s */
+  margin-top:10px; 
+  margin-bottom:15px;
+  padding:20px;
+}
+
+.box-song1 {
+	.padding-left: 2cm !important;
+}
+
+.box-song2 {
+	.padding-left: 4cm !important;
+}
+
+.box-song3 {
+	.padding-left: 6cm !important;
+}
