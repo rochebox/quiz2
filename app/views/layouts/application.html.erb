@@ -18,16 +18,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand big-size" href="#">Add A Band!</a>
+       <%= link_to 'Add A Band!', new_band_path, class: 'navbar-brand big-size' %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <!-- dont need right now...............
+      
       <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
+        <li class="push-right-nav">
+        <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+
+        </li>
       </ul>
       
+      <!-- dont need right now...............
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
       </ul> 
